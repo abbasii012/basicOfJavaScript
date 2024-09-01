@@ -18,6 +18,7 @@ console.log(typeof outsidetemp)
 console.log(typeof username)
 console.log(typeof isloggedin)
 console.log(typeof id)
+console.log(typeof numbber)
 
 
 //NON-primitive(reference)
