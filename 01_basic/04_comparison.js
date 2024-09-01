@@ -21,6 +21,7 @@
 
 
 
-console.log("2"===2);
+console.log("2"===2); // strict check === this also check the data types also
+
 
 
