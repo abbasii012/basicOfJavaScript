@@ -11,4 +11,11 @@ accountemail= 'haseeeb@'
 accountPassword = '12345678'
 accountCity  = 'bagh'
 
+
+/*  
+  prefer not to use var 
+  because of issue in block Scope and Funtional Scope!
+*/
+
+
 console.table([accountemail,accountPassword,accountCity,accountState])
