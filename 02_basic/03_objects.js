@@ -1,5 +1,9 @@
 // singleton
 //Object.create
+// const tinderuser = new Object()
+// console.log(tinderuser);
+
+
 
 //object literal
 const mysym = Symbol("mykey")
