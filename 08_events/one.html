@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | chai aaur code</title>
+</head>
+<body>
+    <h2>Amazing Photos</h2>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: rgb(35, 139, 229);" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+      //document.getElementById('owl').onclick = function(){
+      //  alert("owl clicked")
+     //}
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+// event propagation
+  // document.getElementById('owl').addEventListener('click',function(){
+    //console.log("click in owl")
+   //},false)
+  //document.getElementById('images').addEventListener('click',()=>{
+   //console.log("click in ul")
+   //},true)
+
+   //document.getElementById('owl').addEventListener('click',function(){
+   // console.log("click in owl")
+   //},true)
+   // third attributes true and false is two important concept first is bubbling and
+   // secound is capturing ,defaul set is false is bubbling and true for capturing
+   // false bubbling mean first the small childer toward parent sequence
+   // true for captureing first parent and the child sequence
+
+   //document.getElementById('owl').addEventListener('click',function(e){
+    //console.log("click in owl")
+    // for stop event propagation
+    //e.stopPropagation()
+  // },true)
+  // prevent default stop the default working of tag
+  //document.getElementById('google').addEventListener('click',(e)=>{
+  // e.preventDefault()
+  //  console.log('google clicked')
+  //})
+
+   document.querySelector('#images').addEventListener('click',function(e){
+   // console.log(e.target.tagName)
+    if (e.target.tagName == 'IMG'){
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+   })
+  //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
