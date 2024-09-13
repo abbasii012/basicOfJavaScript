@@ -1,4 +1,15 @@
 {
     "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+    "pieces.telemetry": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "javascript.suggest.completeFunctionCalls": true,
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "terminal.integrated.suggest.enabled": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.acceptSuggestionOnEnter": "on"
 }
